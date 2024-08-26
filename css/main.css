@@ -15,6 +15,11 @@ body::before {
   bottom: 0;
   right: 0;
 }
+@media screen and (max-width: 992px) {
+  body::before {
+    opacity: 0.4;
+  }
+}
 
 .custom-nav .navbar-brand img {
   width: 40px;
@@ -68,7 +73,7 @@ body::before {
   line-height: 1;
 }
 .custom-section p {
-  color: #CACACA;
+  color: #4b4a4a;
   font-weight: 400;
   font-size: 1.1rem;
   margin-top: 1.5em;
@@ -87,4 +92,13 @@ body::before {
   color: #3F3D56;
   border: 1px solid #3F3D56;
   background-color: transparent;
+}
+@media screen and (max-width: 992px) {
+  .custom-section {
+    margin-top: 3em;
+    text-align: center;
+  }
+  .custom-section h2, .custom-section h3, .custom-section p {
+    text-shadow: 1px 1px 1px rgba(242, 242, 242, 0.4);
+  }
 }/*# sourceMappingURL=main.css.map */

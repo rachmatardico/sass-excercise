@@ -4,7 +4,7 @@
 // Variable
 $primary-color: #63EEFF;
 $secondary-color: #3F3D56;
-$tertiary-color: #CACACA;
+$tertiary-color: #4b4a4a;
 $text-color: #F2F2F2;
 
 // Mixin
@@ -32,6 +32,9 @@ body {
         left: 0;
         bottom: 0;
         right: 0;
+        @media screen and (max-width: 992px){
+            opacity: 0.4;
+        }
     }
 }
 
@@ -109,6 +112,14 @@ body {
             color: $secondary-color;
             border: 1px solid $secondary-color;
             background-color: transparent;
+        }
+    }
+
+    @media screen and (max-width: 992px) {
+        margin-top: 3em;
+        text-align: center;
+        h2, h3, p {
+            text-shadow: 1px 1px 1px rgba($color: $text-color, $alpha: 0.4);
         }
     }
 }
