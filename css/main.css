@@ -38,15 +38,46 @@ body::before {
   color: #005863;
 }
 .custom-nav #navbarNav .navbar-nav .nav-item .sign-up-button {
-  background-color: #3F3D56;
+  display: inline-block;
   color: #F2F2F2;
+  background-color: #3F3D56;
   border-radius: 2em;
-  border: 0;
-  padding-left: 1.3em;
-  padding-right: 1.3em;
+  padding: 0.5em 2em;
+  text-decoration: none;
 }
 @media screen and (max-width: 576px) {
   .custom-nav {
     margin-top: -1.2em;
   }
+}
+
+.custom-section {
+  margin-top: 10em;
+}
+.custom-section h2 {
+  font-weight: 700;
+  font-size: 4rem;
+  color: #63EEFF;
+  white-space: nowrap;
+}
+.custom-section h3 {
+  font-weight: 400;
+  font-size: 3rem;
+  color: #3F3D56;
+  white-space: nowrap;
+  line-height: 1;
+}
+.custom-section p {
+  color: #CACACA;
+  font-weight: 400;
+  font-size: 1.1rem;
+  margin-top: 1.5em;
+}
+.custom-section a {
+  display: inline-block;
+  color: #F2F2F2;
+  background-color: #3F3D56;
+  border-radius: 2em;
+  padding: 0.5em 2em;
+  text-decoration: none;
 }/*# sourceMappingURL=main.css.map */
