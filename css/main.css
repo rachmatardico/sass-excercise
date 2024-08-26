@@ -51,13 +51,22 @@ body::before {
   text-decoration: none;
 }
 @media screen and (max-width: 576px) {
-  .custom-nav {
-    margin-top: -1.2em;
+  .custom-nav #navbarNav .navbar-nav .nav-item .nav-link {
+    color: #3F3D56;
+  }
+  .custom-nav #navbarNav .navbar-nav .nav-item .sign-up-button {
+    color: #63EEFF;
+  }
+  .custom-nav .navbar-toggler:focus,
+  .custom-nav .navbar-toggler:active,
+  .custom-nav .navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
   }
 }
 
 .custom-section {
-  margin-top: 10em;
+  margin-top: 5em;
 }
 .custom-section h2 {
   font-weight: 700;

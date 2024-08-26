@@ -1,22 +1,4 @@
-// Font
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-
-// Variable
-$primary-color: #63EEFF;
-$secondary-color: #3F3D56;
-$tertiary-color: #4b4a4a;
-$text-color: #F2F2F2;
-
-// Mixin
-@mixin button{
-    display: inline-block;
-    color: $text-color;
-    background-color: $secondary-color;
-    border-radius: 2em;
-    padding: .5em 2em;
-    text-decoration: none;
-}
-
+@import 'font', 'variables', 'mixin';
 // Styles
 body {
     font-family: 'Montserrat', sans-serif;
@@ -75,13 +57,31 @@ body {
         }
     }
     @media screen and (max-width: 576px){
-        margin-top: -1.2em;
+        #navbarNav{
+            .navbar-nav{
+                .nav-item {
+                    .nav-link {
+                        color: $secondary-color;
+                    }
+                    .sign-up-button {
+                        color: $primary-color;
+                    }
+                }
+            }
+        }
+
+        .navbar-toggler:focus,
+        .navbar-toggler:active,
+        .navbar-toggler-icon:focus {
+            outline: none;
+            box-shadow: none;
+        }
     }
 }
 
 // Custom Section
 .custom-section{
-    margin-top: 10em;
+    margin-top: 5em;
     h2 {
         font-weight: 700;
         font-size: 4rem;
