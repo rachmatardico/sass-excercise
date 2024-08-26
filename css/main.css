@@ -44,4 +44,9 @@ body::before {
   border: 0;
   padding-left: 1.3em;
   padding-right: 1.3em;
+}
+@media screen and (max-width: 576px) {
+  .custom-nav {
+    margin-top: -1.2em;
+  }
 }/*# sourceMappingURL=main.css.map */
