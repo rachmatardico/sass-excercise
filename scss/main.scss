@@ -10,10 +10,19 @@ $text-color: #F2F2F2;
 // Styles
 body {
     font-family: 'Montserrat', sans-serif;
-    background-image: url('../img/landing-picture.png');
-    background-position: top right;
-    background-repeat: no-repeat;
-    background-size: 60vmax;
+    &::before {
+        content: '';
+        background-image: url('../img/landing-picture.png');
+        background-position: top right;
+        background-repeat: no-repeat;
+        background-size: 45vmax;
+        opacity: 0.8;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+    }
 }
 
 // Navbar
@@ -29,6 +38,32 @@ body {
             font-weight: 700;
             font-size: 1.4rem;
             margin-left: 0.4em;
+        }
+    }
+
+    #navbarNav {
+        .navbar-nav {
+            .nav-item {
+                .nav-link {
+                    color: $primary-color;
+                    font-weight: 500;
+                    text-transform: uppercase;
+                    margin-left: 2.4em;
+                    transition: all color 1s ease;
+
+                    &:hover{
+                        color: darken($primary-color, $amount: 50%);
+                    }
+                }
+                .sign-up-button {
+                    background-color: $secondary-color;
+                    color: $text-color;
+                    border-radius: 2em;
+                    border: 0;
+                    padding-left: 1.3em;
+                    padding-right: 1.3em;
+                }
+            }
         }
     }
 }
